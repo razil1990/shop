@@ -1,5 +1,5 @@
 node_modules
-public/min
+min
 less
 package-lock.json
 gulpfile.js
