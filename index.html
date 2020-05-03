@@ -5,15 +5,177 @@
   <title>Shop</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+  <body>
 
-<header class="page-header">
+    <header class="page-header">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list list">
+            <li class="list__item">Каталог товаров</li>
+            <li class="list__item">Вязание на заказ</li>
+            <li class="list__item">
+              <a class="page-header__logo">
+                <img class="page-header__logo-image" src="public/img/logo-mobile.svg" width="86" height="35" alt="Mishkashop">
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="list__search"></a>
+            </li>
+            <li class="list__item">
+              <a class="list__card"></a>Корзина: пока пуста
+            </li>
+            <li class="list__item">Новые поступления</li>
+            <li class="list__item">Распродажа</li>
+            <li class="list__item">Бесплатная доставка по России</li>
+          </ul>
+        </nav>
+    </header>
 
-</header>
+    <main class="page-main">
+      <header class="page-main__header main-header">
+        <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+        <ul class="main-header__list">
+          <li class="main-header__item">Предметы интерьера</li>
+          <li class="main-header__item">Детские игрушки</li>
+        </ul>
+      </header>
+      
+      <section class="product-of-the-week">
+        <header class="product-of-the-week__header">
+          <h2 class="product-of-the-week__title">Вязаные корзинки</h2>
+          <p class="product-of-the-week__label">Товар недели</p>
+        </header>
+        <p class="product-of-the-week__description">
+          Экологически чистая пряжа, ручная работа. 
+          Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="product-of-the-week__features-list ">
+          <tr>
+            <td class="product-of-the-week__features-item">Цвет</td>
+            <td class="product-of-the-week__features-item">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="product-of-the-week__features-item">Диаметр</td>
+            <td class="product-of-the-week__features-item">25 см</td>
+          </tr>
+          <tr>
+            <td class="product-of-the-week__features-item">Высота</td>
+            <td class="product-of-the-week__features-item">15 см</td>
+          </tr>
+        </table>
+        <p class="product-of-the-week__price">Цена: 990 руб.
+          <a class="product-of-the-week__buy button" href="#">Заказать</a>
+        </p>
+        <p class="product-of-the-week__image-wrapper">
+          <img class="product-of-the-week__image" src="public/img/product-of-the-week-mobile.png" width="260" height="315" alt="Товар недели"> 
+        </p>
+      </section>
 
+      <section class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item">
+            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Экологически чистые материалы">
+            <p class="about__description">Экологически чистые материалы</p>
+          </li>
+          <li class="about__item">
+            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Скандинавский стиль по российской цене">
+            <p class="about__description">Скандинавский стиль по российской цене</p>
+          </li>
+          <li class="about__item">
+            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Увеличивает лайки на фотографиях">
+            <p class="about__description">Увеличивает лайки на фотографиях</p>
+          </li>
+          <li class="about__item">
+            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Связано вручную с любовью и умилением">
+            <p class="about__description">Связано вручную с любовью и умилением</p>
+          </li>
+          <li class="about__item">
+            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Поддержка отечественного производителя">
+            <p class="about__description">Поддержка отечественного производителя</p>
+          </li>
+          <li class="about__item">
+            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Поставляется в подарочной упаковке">
+            <p class="about__description">Поставляется в подарочной упаковке</p>
+          </li>
+        </ul>
+      </section>
 
-
-</body>
+      <section class="feedback">
+        <h2 class="feedback__title">Отзывы</h2>
+        <p class="feedback__description">Я молодая мама, 
+          но всё равно фотографии не набирали и близко такого количества лайков, 
+          как у популярных инстамамочек. 
+          В отчаянии, 
+          я накупила аксессуаров и игрушек в Мишке, 
+          и мои фотографии сразу стали более стильными, 
+          а также набирают больше лайков!
+        </p>
+        <p class="feddback__author-info">
+          <span class="feddback__author-name">Анастасия Красильникова</span>
+          <span class="feddback__author-nickname">@misssssiskras</span>
+        </p>
+        <p class="feedback-slider slider">
+          <button class="slider__button" type="button">Назад</button>
+          <button class="slider__button" type="button">Вперед</button>
+        </p>
+        <a href="#" class="feedback__write button">Написать</a> 
+      </section>
+      
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__image">
+          <img class="constacts__flag-image" src="public/img/">
+        </p>
+        <table class="contacts__info">
+          <tr>
+            <td class="contacts__info-mail">
+              e-mail:
+            </td>
+            <td class="contacts__info-mail">
+              info@mimimishkashop.ru
+            </td>
+          </tr>
+          <tr>
+            <td class="contacts__info-address">
+              адрес:
+            </td>
+            <td class="contacts__info-address">
+              г. Нижний Новгород, ул. Коломенская, 20, корп. 2
+            </td>
+          </tr>
+        </table>
+        <a href="#" class="contacts__write-us button button--big">Наришите нам</a>
+        <p class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5493.774900048356!2d51.81399905459501!3d55.646364802056375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415f9380b7b1f099%3A0x66d91f93d058217b!2z0JDRgtC10LvRjNC1ICcn0JTQsNC80YHQutC-0LUg0KHRh9Cw0YHRgtGM0LUnJw!5e1!3m2!1sru!2sru!4v1588513270412!5m2!1sru!2sru" 
+          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </p>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image">
+      </a>
+      <div class="page-footer__social social"></div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="#">
+            <img class="copyright__image">
+          </a>
+        </div>
+    </footer>
+  </body>
 </html>
