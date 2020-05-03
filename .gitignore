@@ -3,3 +3,4 @@ min
 less
 package-lock.json
 gulpfile.js
+debug.log
