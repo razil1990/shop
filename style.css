@@ -1,1 +1,30 @@
-/* Файл variables.less */
+/* Переменные */
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+}
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+.page-header__logo {
+  position: relative;
+  text-align: center;
+  height: 79px;
+}
+.page-header__logo-image {
+  width: 86px;
+  height: 79px;
+}
+.nav__toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 79px;
+  padding: 0 10px;
+  border: none;
+  background-color: #ffffff;
+}
