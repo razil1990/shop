@@ -3,28 +3,130 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
 }
 .page-header {
   display: flex;
   flex-direction: column;
 }
-.page-header__logo {
-  position: relative;
-  text-align: center;
-  height: 79px;
-}
-.page-header__logo-image {
+.list__logo-image {
   width: 86px;
-  height: 79px;
 }
-.nav__toggle {
+.main-nav {
+  position: relative;
+}
+.main-nav__toggle--closed {
   position: absolute;
   right: 0;
   top: 0;
+  width: 95px;
   height: 79px;
   padding: 0 10px;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
+}
+.main-nav__toggle--closed:after {
+  content: '';
+  position: absolute;
+  top: 31px;
+  right: 40px;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 6px 0 0 black,
+        0 12px 0 0 black;
+}
+.main-nav__toggle--opened {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 95px;
+  height: 79px;
+  padding: 0 10px;
+  border: none;
+  background-color: transparent;
+}
+.main-nav__toggle--opened:after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: 40px;
+  width: 2px;
+  transform: rotate(45deg);
+  height: 24px;
+  background-color: black;
+}
+.main-nav__toggle--opened:before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: 40px;
+  width: 2px;
+  transform: rotate(-45deg);
+  height: 24px;
+  background-color: black;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.list__item {
+  list-style: none;
+  height: 78px;
+  border-bottom: 1px solid #ececec;
+}
+.list__item--logo {
+  text-align: center;
+}
+.list__link {
+  display: block;
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  padding-left: 75px;
+  padding-right: 60px;
+  line-height: 24px;
+  font-size: 17px;
+}
+.list__link--logo {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  padding-right: 79px;
+}
+.list__image {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+.list__item--mobile-off {
+  display: none;
+}
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .list__item--mobile-off {
+    display: block;
+  }
+  .list__item-tablet-off {
+    display: none;
+  }
+  .list__link--tablet-off {
+    display: none;
+  }
+  .list__item--logo {
+    min-width: 370px;
+  }
 }

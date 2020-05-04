@@ -10,30 +10,51 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" tabindex="1" src="public/img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишкашоп">
-      </a> 
-      <button class="nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav">
+      <nav class="main-nav"> 
+        <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
         <ul class="main-nav__list list">
-          <li class="list__item">Каталог товаров</li>
-          <li class="list__item">Вязание на заказ</li>
-          <li class="list__item">
-            <a class="list__search"></a>
-          </li>
-          <li class="list__item">
-            <a class="page-header__logo">
-              <img class="page-header__logo-image" src="public/img/logo-mobile.svg" width="86" height="35" alt="Mishkashop">
+          <li class="list__item list__item--logo">
+            <a class="list__link list__link--logo">
+              <img class="list__logo-image" tabindex="1" src="public/img/logo-mobile.svg" width="86" heightt="35" alt="Логотип Мишкашоп">
             </a> 
           </li>
           <li class="list__item">
-            <a class="list__card"></a>Корзина: пока пуста
+            <a class="list__link" >Каталог товаров</a>
           </li>
-          <li class="list__item">Новые поступления</li>
-          <li class="list__item">Распродажа</li>
-          <li class="list__item">Бесплатная доставка по России</li>
+          <li class="list__item">
+            <a class="list__link">Вязание на заказ</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link"><img class="list__image"  src="public/img/search-icon.svg" width="20" height="20">
+              <span class="list__link--tablet-off">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a class="list__link"><img class="list__image"  src="public/img/card-icon.svg" width="20" height="20">Корзина: пока пуста</a>
+          </li>
+          <li class="list__item list__item--mobile-off list__item-tablet-off">
+            <a class="list__link">Новые поступления</a>
+          </li>
+          <li class="list__item list__item--mobile-off list__item-tablet-off">
+            <a class="list__link">Распродажа</a>
+          </li>
+          <li class="list__item list__item--mobile-off">
+            <a class="list__link">Бесплатная доставка по России</a>
+          </li>
+        </ul>
+
+
+
+        <ul class="main-nav__list list">
+          <li class="list__item">
+            <a class="list__link" >Каталог товаров</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link">Вязание на заказ</a>
+          </li>
+          <li class="list__item list__item--mobile-off">
+            <a class="list__link">Бесплатная доставка по России</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -74,7 +95,7 @@
           <a class="product-of-the-week__buy button" href="#">Заказать</a>
         </p>
         <p class="product-of-the-week__image-wrapper">
-          <img class="product-of-the-week__image" src="public/img/product-of-the-week-mobile.png" width="260" height="315" alt="Товар недели"> 
+          <img class="product-of-the-week__image" src="public/img/product-of-the-week-mobile.png" width="260" heightt="315" alt="Товар недели"> 
         </p>
       </section>
 
@@ -82,27 +103,27 @@
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__item">
-            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Экологически чистые материалы">
+            <img class="about__image" width="55" height="23" src="public/img/" alt="Экологически чистые материалы">
             <p class="about__description">Экологически чистые материалы</p>
           </li>
           <li class="about__item">
-            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Скандинавский стиль по российской цене">
+            <img class="about__image" width="55" height="23" src="public/img/" alt="Скандинавский стиль по российской цене">
             <p class="about__description">Скандинавский стиль по российской цене</p>
           </li>
           <li class="about__item">
-            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Увеличивает лайки на фотографиях">
+            <img class="about__image" width="55" height="23" src="public/img/" alt="Увеличивает лайки на фотографиях">
             <p class="about__description">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about__item">
-            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Связано вручную с любовью и умилением">
+            <img class="about__image" width="55" height="23" src="public/img/" alt="Связано вручную с любовью и умилением">
             <p class="about__description">Связано вручную с любовью и умилением</p>
           </li>
           <li class="about__item">
-            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Поддержка отечественного производителя">
+            <img class="about__image" width="55" height="23" src="public/img/" alt="Поддержка отечественного производителя">
             <p class="about__description">Поддержка отечественного производителя</p>
           </li>
           <li class="about__item">
-            <img class="about__image" width="55" heigh="23" src="public/img/" alt="Поставляется в подарочной упаковке">
+            <img class="about__image" width="55" height="23" src="public/img/" alt="Поставляется в подарочной упаковке">
             <p class="about__description">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
@@ -155,7 +176,7 @@
         <a href="#" class="contacts__write-us button button--big">Наришите нам</a>
         <p class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5493.774900048356!2d51.81399905459501!3d55.646364802056375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415f9380b7b1f099%3A0x66d91f93d058217b!2z0JDRgtC10LvRjNC1ICcn0JTQsNC80YHQutC-0LUg0KHRh9Cw0YHRgtGM0LUnJw!5e1!3m2!1sru!2sru!4v1588513270412!5m2!1sru!2sru" 
-          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          width="100%" heightt="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </p>
       </section>
     </main>
