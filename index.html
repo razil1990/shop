@@ -11,51 +11,60 @@
 
     <header class="page-header">
       <nav class="main-nav"> 
+        <a class="logo-link tablet-off">
+          <picture>
+            <source media="(min-width: 768px)" srcset="public/img/logo-tablet.svg">
+            <img class="list__logo-image" tabindex="1" src="public/img/logo-mobile.svg" width="86" heightt="35" alt="Логотип Мишкашоп">
+          </picture>
+        </a> 
         <button class="main-nav__toggle main-nav__toggle--closed" type="button"></button>
-        <ul class="main-nav__list list">
-          <li class="list__item list__item--logo">
-            <a class="list__link list__link--logo">
-              <img class="list__logo-image" tabindex="1" src="public/img/logo-mobile.svg" width="86" heightt="35" alt="Логотип Мишкашоп">
-            </a> 
+        <div class="for-border">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list list">
+            <li class="list__item list__item--logo mobile-off">
+              <a class="list__link list__link--logo">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="public/img/logo-tablet.svg">
+                  <img class="list__logo-image" tabindex="1" src="public/img/logo-mobile.svg" width="86" heightt="35" alt="Логотип Мишкашоп">
+                </picture>
+              </a> 
+            </li>
+            <li class="list__item tablet-off">
+              <a class="list__link" >Каталог товаров</a>
+            </li>
+            <li class="list__item tablet-off">
+              <a class="list__link">Вязание на заказ</a>
+            </li>
+            <li class="list__item list__item--search">
+              <a class="list__link list__link--search"><img class="list__image"  src="public/img/search-icon.svg" width="20" height="20">
+                <span class="list__link-title tablet-off">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="list__link list__link--cart"><img class="list__image list__image--cart"  src="public/img/card-icon.svg" width="20" height="20">Корзина: пока пуста</a>
+            </li>
+            <li class="list__item list__item--mobile-off tablet-off mobile-off">
+              <a class="list__link">Новые поступления</a>
+            </li>
+            <li class="list__item list__item--mobile-off tablet-off mobile-off">
+              <a class="list__link">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div class="main-nav__wrapper double-nav--wrapper mobile-off">
+        <ul class="main-nav__list double-nav__list">
+          <li class="double-nav__item">
+            <a class="double-nav__link" >Каталог товаров</a>
           </li>
-          <li class="list__item">
-            <a class="list__link" >Каталог товаров</a>
+          <li class="double-nav__item double-nav__item--order">
+            <a class="double-nav__link">Вязание на заказ</a>
           </li>
-          <li class="list__item">
-            <a class="list__link">Вязание на заказ</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link"><img class="list__image"  src="public/img/search-icon.svg" width="20" height="20">
-              <span class="list__link--tablet-off">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="list__item">
-            <a class="list__link"><img class="list__image"  src="public/img/card-icon.svg" width="20" height="20">Корзина: пока пуста</a>
-          </li>
-          <li class="list__item list__item--mobile-off list__item-tablet-off">
-            <a class="list__link">Новые поступления</a>
-          </li>
-          <li class="list__item list__item--mobile-off list__item-tablet-off">
-            <a class="list__link">Распродажа</a>
-          </li>
-          <li class="list__item list__item--mobile-off">
-            <a class="list__link">Бесплатная доставка по России</a>
+          <li class="double-nav__item mobile-off">
+            <a class="double-nav__link double-nav__link--post">Бесплатная доставка по России</a>
           </li>
         </ul>
-
-
-
-        <ul class="main-nav__list list">
-          <li class="list__item">
-            <a class="list__link" >Каталог товаров</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link">Вязание на заказ</a>
-          </li>
-          <li class="list__item list__item--mobile-off">
-            <a class="list__link">Бесплатная доставка по России</a>
-          </li>
-        </ul>
+        </div>
       </nav>
     </header>
 
