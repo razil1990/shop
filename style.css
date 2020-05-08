@@ -39,8 +39,7 @@ body {
   right: 0px;
   top: 0px;
   width: 82px;
-  height: 79px;
-  padding: 0 0px;
+  padding: 39px 0px;
   border: none;
   background-color: transparent;
 }
@@ -60,8 +59,7 @@ body {
   right: 0px;
   top: 0px;
   width: 82px;
-  height: 79px;
-  padding: 0 0px;
+  padding: 39px 0px;
   border: none;
   background-color: transparent;
 }
@@ -101,8 +99,8 @@ body {
 .list__link {
   display: block;
   position: relative;
-  padding-top: 26px;
-  padding-bottom: 29px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   padding-left: 75px;
   padding-right: 60px;
   line-height: 24px;
@@ -127,6 +125,56 @@ body {
 .double-nav__list--for-desktop {
   display: none;
 }
+.main-header__list {
+  margin-top: 125px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-header__title {
+  margin: 0;
+  margin-top: 70px;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  white-space: pre-line;
+}
+.page-main__header {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/public/img/hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center -15px;
+  background-color: #f9f9f9;
+}
+.main-header__link {
+  display: block;
+  padding: 30px 0;
+  padding-left: 36px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 19px;
+  line-height: 24px;
+}
+.main-header__item:first-child {
+  background-image: url('/public/img/lamp.svg');
+  background-repeat: no-repeat;
+  background-size: 39px 62px;
+  background-position: right 37px bottom 44%;
+  background-color: #63d1bb;
+}
+.main-header__item {
+  background-image: url('/public/img/lego.svg');
+  background-repeat: no-repeat;
+  background-size: 62px 62px;
+  background-position: right 29px bottom 50%;
+  background-color: #56c3b2;
+}
+.main-header__title--mobile-off {
+  display: none;
+}
 @media (min-width: 768px) {
   .mobile-off {
     display: block;
@@ -148,6 +196,9 @@ body {
     justify-content: space-between;
     flex-grow: 1;
     flex-wrap: nowrap;
+  }
+  .double-nav__item--tablet-off {
+    display: none;
   }
   .list__item {
     min-height: 89px;
@@ -213,8 +264,50 @@ body {
     margin-left: 37px;
   }
   .for-border {
-    margin-bottom: 22px;
     border-bottom: 1px solid #ececec;
+  }
+  .wrapper-for-background {
+    padding-top: 18px;
+    background-color: #f9f9f9;
+  }
+  .page-main__header {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/public/img/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center -42px;
+    background-color: #f9f9f9;
+  }
+  .main-header__title {
+    display: none;
+  }
+  .main-header__title--mobile-off {
+    display: block;
+    margin-top: 113px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .main-header__list {
+    display: flex;
+    justify-content: center;
+    max-width: 1050px;
+    margin-top: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-header__item {
+    flex-grow: 1;
+    width: 334px;
+  }
+  .main-header-wrapper {
+    margin: 0 50px;
+  }
+  .main-header__item {
+    background-position: right 34px bottom 50%;
+  }
+  .a {
+    display: flex;
   }
 }
 @media (min-width: 1250px) {
@@ -225,12 +318,12 @@ body {
   .main-nav__list {
     width: 1050px;
   }
+  .list {
+    justify-content: normal;
+  }
   .list__logo-image {
     width: 142px;
     height: 72px;
-  }
-  .double-nav__list:nth-child(n+2) {
-    display: block;
   }
   .desktop-off {
     display: block;
@@ -240,18 +333,39 @@ body {
     padding-bottom: 0px;
   }
   .list__link--for-desktop {
-    padding: 33px 0;
+    padding: 33px 36px;
+  }
+  .list__item--order {
+    border-left: 1px solid #ececec;
   }
   .list__item--search {
     margin-left: 0;
   }
   .list__item--logo {
     order: 1;
+    margin-left: 43px;
   }
   .list__item--search {
     order: 2;
+    margin-left: auto;
   }
   .list__item--cart {
     order: 3;
+  }
+  .list__item--catalog {
+    margin-right: 36px;
+  }
+  .list__link--catalog {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .double-nav__item--order {
+    margin-left: 64px;
+  }
+  .double-nav__item--tablet-off {
+    display: block;
+  }
+  .double-nav__item--desktop-off {
+    display: none;
   }
 }
