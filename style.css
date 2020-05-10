@@ -175,6 +175,100 @@ body {
 .main-header__title--mobile-off {
   display: none;
 }
+.product-of-the-week__title {
+  margin: 0;
+  margin-top: 29px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.product-of-the-week__wrapper {
+  width: 81%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.product-of-the-week__label {
+  margin-top: 7px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.product-of-the-week__description {
+  margin: 0;
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 24px;
+}
+.product-of-the-week__features {
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.product-of-the-week__features td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+.product-of-the-week__features td:last-child {
+  padding-left: 30px;
+}
+.product-of-the-week__image {
+  margin: 0;
+  margin-top: 28px;
+}
+.product-of-the-week__image img {
+  width: 100%;
+  height: 100%;
+}
+.make-order {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+.make-order__price {
+  margin: 19px 0;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.order-button {
+  display: block;
+  padding: 15px 0;
+  border: 2px solid;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.zigzag-line-wrapper {
+  margin-top: 36px;
+}
+#zigzag {
+  height: 7px;
+}
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.about-wrapper {
+  margin: 0 auto;
+  width: 81%;
+}
+.about__for-image--rocket {
+  margin-left: -5px;
+}
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+.about__for-image {
+  margin-bottom: 20px;
+}
+.about__item {
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .mobile-off {
     display: block;
@@ -306,8 +400,66 @@ body {
   .main-header__item {
     background-position: right 34px bottom 50%;
   }
-  .a {
+  .wave-wrapper {
+    margin-top: -12px;
+  }
+  #wave {
+    height: 24px;
+  }
+  .product-of-the-week__title {
+    margin-top: 0;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  .product-of-the-week__label {
+    margin-right: 27px;
+    line-height: 17px;
+    text-align: center;
+  }
+  .product-of-the-week__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .make-order__price {
+    font-size: 20px;
+  }
+  .product-of-the-week__header {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+  .product-of-the-week {
+    margin-top: 31px;
+  }
+  .product-of-the-week__wrapper {
+    width: 668px;
+    max-width: 668px;
+    background-image: url('public/img/triple-set-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: 333px 404px;
+    background-position: 98% 98%;
+  }
+  .product-of-the-week__features {
+    margin-top: 34px;
+  }
+  .product-of-the-week__make-order {
+    margin-top: 49px;
+  }
+  .make-order {
+    width: 290px;
+  }
+  .make-order__price {
+    margin-bottom: 34px;
+  }
+  .zigzag-line-wrapper {
+    margin-top: 50px;
+  }
+  .product-of-the-week__image {
+    display: none;
+  }
+  #zigzag {
+    height: 15px;
   }
 }
 @media (min-width: 1250px) {
@@ -367,5 +519,47 @@ body {
   }
   .double-nav__item--desktop-off {
     display: none;
+  }
+  #wave {
+    height: 26px;
+  }
+  .product-of-the-week__wrapper {
+    margin: 0;
+    margin-left: auto;
+    width: 875px;
+    max-width: 875px;
+    background-image: url('public/img/triple-set-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 525px 636px;
+    background-position: 98% 98%;
+  }
+  .product-of-the-week__header {
+    position: relative;
+    padding-top: 72px;
+    margin-top: 28px;
+    margin-bottom: 53px;
+  }
+  .product-of-the-week__label {
+    position: absolute;
+    top: 80px;
+    left: -134px;
+  }
+  .product-of-the-week__title {
+    margin-top: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .product-of-the-week {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .product-of-the-week__features {
+    margin-top: 48px;
+  }
+  .product-of-the-week__make-order {
+    margin-top: 108px;
+  }
+  #zigzag {
+    height: 24px;
   }
 }
