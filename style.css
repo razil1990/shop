@@ -10,6 +10,20 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.btn,
+.list__link--logo,
+.page-footer__logo,
+.copyright__text,
+.button,
+.main-header__link {
+  cursor: pointer;
+}
+span,
+h2,
+h1,
+p {
+  cursor: default;
+}
 .page-header {
   display: flex;
   flex-direction: column;
@@ -182,7 +196,7 @@ a {
 .page-main__header {
   display: flex;
   flex-direction: column;
-  background-image: url('/public/img/hero-mobile.jpg');
+  background-image: url('public/img/hero-mobile.jpg');
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center -15px;
@@ -599,7 +613,7 @@ a {
   .page-main__header {
     display: flex;
     flex-direction: column;
-    background-image: url('/public/img/hero-desktop.jpg');
+    background-image: url('public/img/hero-desktop.jpg');
     background-repeat: no-repeat;
     background-size: auto auto;
     background-position: center -42px;
@@ -810,7 +824,7 @@ a {
     justify-content: space-between;
   }
   .page-footer__logo {
-    padding: 21px 0;
+    padding: 17px 0;
   }
   .social__list {
     margin: 0 auto;
@@ -963,7 +977,7 @@ a {
     line-height: 57px;
   }
   .feedback__description {
-    margin-left: 165px;
+    margin-left: 170px;
     padding-right: 68px;
   }
   .feedback__write {
